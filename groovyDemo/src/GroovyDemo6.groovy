@@ -13,6 +13,8 @@ class GroovyDemo6 {
         File file = new File("src/filedemo6");
         println file.text;
         println "The file ${file.absolutePath} has ${file.length()} bytes"
+        println "File? ${file.isFile()}"
+        println "Directory? ${file.isDirectory()}"
 
 
         //写文件
