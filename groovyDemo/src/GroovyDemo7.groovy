@@ -7,6 +7,9 @@ class GroovyDemo7 {
         Integer x = 5, y = 10, z = 0;
         int a = 3;
         Double b = 12.34;
+        String c = 1024;
+        Integer d = 8.6;
+        float e = -120.78;
 
         z = x + y;
         println(z)
@@ -26,5 +29,29 @@ class GroovyDemo7 {
 
         Double bNew = Double.valueOf(b);
         println(bNew)
+
+        // toString()方法
+        println(x.toString())
+        println(Integer.toString(12));
+
+        // parseInt()方法, 将字符串类型的 c转化为16进制Int类型整数
+        println(Integer.parseInt(c,16));
+
+        // abs() 方法
+        println(Math.abs(d));
+
+        // ceil() 方法 -120.78  ->  -120.0
+        println(Math.ceil(e));
+        println("ceil: " + Math.ceil(b));
+
+        // floor() 方法 -120.78 -> -121.0
+        println("floor: " + Math.floor(b))
+        println(Math.floor(e))
+
+        // rint() 方法
+        println(Math.rint(b))    //12.78 -> 12   ???
+        println(Math.rint(e))
+
+
     }
 }
