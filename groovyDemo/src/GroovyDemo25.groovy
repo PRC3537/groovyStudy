@@ -34,9 +34,11 @@ class Student25Test extends GroovyTestCase {
         assertToString(stu.Display(), expected);
     }
 }
-
+//
 class EmployeeTest extends GroovyTestCase {
-
+    void testDisplay(){
+        println("EmployeeTest");
+    }
 }
 
 class AllTests{
@@ -44,9 +46,10 @@ class AllTests{
         def allTests = new GroovyTestSuite();
         allTests.addTestSuite( Student25Test.class )
         allTests.addTestSuite( EmployeeTest.class )
+        return allTests
     }
+
 }
 
 TestRunner.run(AllTests.suite());
 
-// 怎样运行？？？
